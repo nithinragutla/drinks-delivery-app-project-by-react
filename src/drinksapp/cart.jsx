@@ -124,7 +124,7 @@ function Cart() {
                 <div className="pay-now-container">
                     <button
                         className="pay-now-button"
-                        onClick={() => navigate('/PaymentPage')}
+                        onClick={() => navigate('/HomePage')}
                     >
                         Pay Now
                     </button>
