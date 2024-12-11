@@ -121,14 +121,15 @@ function Cart() {
                     <p>Alcohol Total: ₹{alcoholTotal}</p>
                     <h2>Overall Total: ₹{overallTotal}</h2>
                 </div>
-                <div className="pay-now-container">
+                {/* <div className="pay-now-container">
                     <button
                         className="pay-now-button"
                         onClick={() => navigate('/PaymentPage')}
                     >
                         Pay Now
                     </button>
-                </div>
+                </div> */}
+                <button onClick={()=>navigate('/PaymentPage')}>Paynow</button>
             </>
         ) : (
             <p className="empty-cart">Your cart is empty!</p>
