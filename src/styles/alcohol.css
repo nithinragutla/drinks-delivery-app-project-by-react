@@ -1,11 +1,10 @@
-/* Container styling */
+/* Base styles */
 .alcohol-brands-container {
     font-family: Arial, sans-serif;
     padding: 20px;
     position: relative; /* Needed for absolute positioning of buttons */
 }
 
-/* Title styling */
 .alcohol-brands-title {
     text-align: center;
     color: #ffffff;
@@ -13,7 +12,6 @@
     margin-bottom: 20px;
 }
 
-/* Top right corner buttons */
 .top-right-buttons {
     position: absolute;
     top: 20px;
@@ -22,8 +20,7 @@
     gap: 10px;
 }
 
-.back-to-home-button {
-    background-color: #3498db; /* Updated to blue */
+.back-to-home-button, .cart-icon-button {
     color: white;
     border: none;
     padding: 10px 15px;
@@ -35,20 +32,15 @@
     justify-content: center;
 }
 
-.cart-icon-button {
-    background-color: #f39c12;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.5rem; /* Larger size for cart icon */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.back-to-home-button {
+    background-color: #3498db; /* Blue */
 }
 
-/* Grid layout */
+.cart-icon-button {
+    background-color: #f39c12; /* Orange */
+    font-size: 1.5rem; /* Larger size for cart icon */
+}
+
 .alcohol-brands-grid {
     display: flex;
     flex-wrap: wrap;
@@ -56,7 +48,6 @@
     justify-content: center;
 }
 
-/* Card styling */
 .alcohol-brand-card {
     background-color: rgba(20, 1, 1, 0.595);
     border: 1px solid #ddd;
@@ -74,7 +65,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Image styling */
 .alcohol-brand-image {
     width: 100%;
     height: 250px;
@@ -83,7 +73,6 @@
     margin-bottom: 10px;
 }
 
-/* Text styling */
 .alcohol-brand-name {
     font-size: 1.2rem;
     color: #ffffff;
@@ -96,9 +85,8 @@
     margin-bottom: 10px;
 }
 
-/* Button styling */
 .add-to-cart-button {
-    background-color: #2ecc71; /* Updated to green */
+    background-color: #2ecc71; /* Green */
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -109,7 +97,7 @@
 }
 
 .buy-now-button {
-    background-color: #e74c3c; /* Updated to red */
+    background-color: #e74c3c; /* Red */
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -117,4 +105,92 @@
     cursor: pointer;
     margin: 5px;
     font-size: 0.9rem;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .alcohol-brands-title {
+        font-size: 1.8rem;
+    }
+
+    .top-right-buttons {
+        top: 10px;
+        right: 10px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .back-to-home-button, .cart-icon-button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .alcohol-brand-card {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .alcohol-brand-image {
+        height: 200px;
+    }
+
+    .alcohol-brand-name {
+        font-size: 1.1rem;
+    }
+
+    .alcohol-brand-price {
+        font-size: 0.9rem;
+    }
+
+    .add-to-cart-button, .buy-now-button {
+        padding: 10px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .alcohol-brands-title {
+        font-size: 35px;
+    }
+
+    .top-right-buttons {
+        position: static;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .back-to-home-button, .cart-icon-button {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .alcohol-brands-grid {
+        gap: 10px;
+    }
+
+    .alcohol-brand-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .alcohol-brand-image {
+        height: 250px;
+    }
+
+    .alcohol-brand-name {
+        font-size: 1rem;
+    }
+
+    .alcohol-brand-price {
+        font-size: 1rem;
+    }
+
+    .add-to-cart-button, .buy-now-button {
+        padding: 15px 15px;
+        font-size: 1rem;
+    }
 }

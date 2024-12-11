@@ -1,0 +1,125 @@
+/* General Styles */
+.ccoa-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/05/30/05/46/goa-2355886_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  
+  /* Navigation Buttons */
+  .navigation {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .home-button,
+  .cart-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cart-button {
+    background-color: #f39c12;
+  }
+  
+  .cart-icon {
+    margin-right: 5px;
+  }
+  
+  .heading {
+    text-align: center;
+    color: black;
+  }
+  
+  /* Drinks Grid */
+  .drinks-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .drink-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: rgb(0 0 0 / 0.5);
+  }
+  
+  .drink-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .drink-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .button-group button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button-group button:nth-child(2) {
+    background-color: #2ecc71;
+  }
+  
+  /* Loading Message */
+  .loading-message {
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .drinks-grid {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+    }
+  
+    .drink-card {
+      width: 90%;
+    }
+  
+    .navigation {
+      /* flex-direction: column; */
+      padding-top: 80px;
+      padding-right: 30px;
+      gap: 5px;
+    }
+  
+    .home-button,
+    .cart-button {
+      padding: 8px 16px;
+    }
+  }
+  

@@ -1,0 +1,164 @@
+/* General Styles */
+.cocktails-container {
+    font-family: 'Arial, sans-serif';
+    padding: 20px;
+    background-image: url('https://images.pexels.com/photos/19533201/pexels-photo-19533201/free-photo-of-drink-by-swimming-pool.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #2f2c2b00;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-back-home,
+.btn-cart {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-cart {
+    background-color: #f39c12;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+/* Header */
+.header {
+    justify-content: center;
+    color: black;
+}
+
+/* Cocktails Grid */
+.cocktails-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cocktail Card */
+.cocktail-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cocktail-card:hover {
+    transform: scale(1.05);
+}
+
+.cocktail-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Buttons */
+.btn-add-to-cart,
+.btn-buy-now {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-buy-now {
+    background-color: #e74c3c;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { /* Tablet view */
+    .cocktails-grid {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 15px;
+    }
+
+    .cocktail-card {
+        width: 160px;
+        padding: 8px;
+    }
+
+    .top-bar {
+        top: 10px;
+        right: 10px;
+        gap: 8px;
+    }
+
+    .btn-back-home,
+    .btn-cart {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) { /* Mobile view */
+    .cocktails-container {
+        padding: 100px;
+    }
+
+    .cocktails-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-bar {
+        padding-top: 80px;
+        padding-right: 70px;
+        gap: 5px;
+    }
+
+    .btn-back-home,
+    .btn-cart {
+        padding: 6px 12px;
+        font-size: 20px;
+    }
+
+    .header {
+        text-align: center;
+        font-size: 50px;
+        margin-top: -80px;
+        padding-bottom: 80px;
+        color: black;
+    }
+
+    .cocktail-card {
+        width: 100%;
+        max-width: 280px;
+        padding: 10px;
+    }
+
+    .cocktail-img {
+        height: auto;
+    }
+
+    .btn-add-to-cart,
+    .btn-buy-now {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}

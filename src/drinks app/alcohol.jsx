@@ -244,7 +244,7 @@ const AlcoholBrands = () => {
         className="cart-icon-button"
         onClick={() => navigate("/cart")}
       >
-        🛒
+         <FaShoppingCart className="cart-icon" />
       </button>
     </div>
 

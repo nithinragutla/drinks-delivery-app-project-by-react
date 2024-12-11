@@ -97,6 +97,7 @@ body {
 @media (max-width: 768px) {
   .card-container {
     flex-direction: column;
+    padding-top: 50px;
     align-items: center;
   }
 
