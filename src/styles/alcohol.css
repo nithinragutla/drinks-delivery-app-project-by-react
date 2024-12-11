@@ -1,0 +1,120 @@
+/* Container styling */
+.alcohol-brands-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    position: relative; /* Needed for absolute positioning of buttons */
+}
+
+/* Title styling */
+.alcohol-brands-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Top right corner buttons */
+.top-right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.back-to-home-button {
+    background-color: #3498db; /* Updated to blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-icon-button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Larger size for cart icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Grid layout */
+.alcohol-brands-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card styling */
+.alcohol-brand-card {
+    background-color: rgba(20, 1, 1, 0.595);
+    border: 1px solid #ddd;
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.alcohol-brand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.alcohol-brand-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Text styling */
+.alcohol-brand-name {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.alcohol-brand-price {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.add-to-cart-button {
+    background-color: #2ecc71; /* Updated to green */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+.buy-now-button {
+    background-color: #e74c3c; /* Updated to red */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 0.9rem;
+}

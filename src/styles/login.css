@@ -1,0 +1,122 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+.login-log {
+  width: 100vw; /* Ensures the background scales with the viewport width */
+  background: url('https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Add your image path here */
+  background-size: cover; /* Ensures the image covers the viewport */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  background-position: center; /* Centers the background image */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px; /* Adds spacing for smaller viewports */
+}
+
+/* Container */
+.login-container {
+  width: 100%; /* Flexible width for all screens */
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  background-image: linear-gradient(180deg, rgb(191, 174, 76), rgb(249, 176, 249));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: calc(1.2rem + 1vw); /* Scales font size dynamically */
+  color: #333;
+}
+
+.login-form label {
+  font-size: calc(0.9rem + 0.5vw); /* Scales font size dynamically */
+  color: #555;
+}
+
+.login-form input {
+  padding: 10px;
+  font-size: calc(0.9rem + 0.2vw); /* Scales font size dynamically */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  padding: 10px;
+  background-image: linear-gradient(to right, rgba(9, 9, 9, 0), white);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: calc(0.9rem + 0.2vw); /* Scales font size dynamically */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(79, 101, 240);
+}
+
+.login-form button:hover {
+  color: white;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .login-container {
+      width: 90%; /* Slightly reduces container width */
+      padding: 15px;
+  }
+
+  .login-form h2 {
+      font-size: 1.4rem; /* Adjust heading size */
+  }
+
+  .login-form input,
+  .login-form button {
+      font-size: 1rem; /* Consistent font size for inputs/buttons */
+  }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+  .login-container {
+      width: 95%;
+      padding: 10px;
+  }
+
+  .login-form h2 {
+      font-size: 1.2rem; /* Smaller heading size */
+  }
+
+  .login-form input,
+  .login-form button {
+      font-size: 0.9rem; /* Compact input/button font size */
+  }
+
+  .login-form label {
+      font-size: 0.9rem; /* Scaled label size */
+  }
+}
+
+/* Ensures the design adapts to various devices */

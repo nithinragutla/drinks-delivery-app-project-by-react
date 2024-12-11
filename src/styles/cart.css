@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex; /* Center the content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: rgba(202, 181, 181, 0.8); /* Optional background for better contrast */
+}
+
+.niiiii {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.cart-container {
+    max-width: 800px; /* Constrain width for better aesthetics */
+    width: 90%; /* Responsive width */
+    height: auto; /* Automatically adjust height based on content */
+    color: black;
+    opacity: 0.95;
+    margin: 20px auto; /* Center horizontally and add vertical margin */
+    padding: 20px;
+    background-color: rgba(6, 5, 5, 0.426);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: height 0.3s ease; /* Smooth resizing */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #000000;
+}
+
+.home-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.home-button:hover {
+    background-color: #0012b3;
+}
+
+/* Table Styles */
+.cart-table {
+    color: #000000;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table td {
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.cart-table img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cart-table button {
+    background-color: #f90019;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-table button:hover {
+    background-color: #c01324;
+}
+
+/* Empty Cart Message */
+.empty-cart {
+    font-size: 18px;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .cart-container {
+        padding: 10px;
+    }
+
+    .cart-table img {
+        max-width: 100px;
+    }
+
+    .cart-table td {
+        font-size: 14px;
+    }
+
+    .home-button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
