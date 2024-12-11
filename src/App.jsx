@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom";
-import Loginpage from "./drinks app/login";
-import HomePage from "./drinks app/home";
-import Ccoa from "./drinks app/coca";
-import Cocktails from "./drinks app/tails";
-import Cart from "./drinks app/cart";
+import Loginpage from "./drinksapp/login";
+import HomePage from "./drinksapp/home";
+import Ccoa from "./drinksapp/coca";
+import Cocktails from "./drinksapp/tails";
+import Cart from "./drinksapp/cart";
 import { useState } from "react";
-import PaymentPage from "./drinks app/pay";
-import AlcoholBrands from "./drinks app/alcohol";
-import Paybuy from "./drinks app/paybuy";
+import PaymentPage from "./drinksapp/pay";
+import AlcoholBrands from "./drinksapp/alcohol";
+import Paybuy from "./drinksapp/paybuy";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
