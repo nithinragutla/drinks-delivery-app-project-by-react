@@ -129,7 +129,7 @@ function Cart() {
                         Pay Now
                     </button>
                 </div> */}
-                <button onClick={()=>navigate('/HomePage')} >Paynow</button>
+                <button onClick={()=>navigate('/PaymentPage')} >Paynow</button>
             </>
         ) : (
             <p className="empty-cart">Your cart is empty!</p>
