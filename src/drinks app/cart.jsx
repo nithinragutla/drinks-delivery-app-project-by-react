@@ -46,7 +46,7 @@ function Cart() {
     return (
         <div className="niiiii">
         <div className="cart-container">
-        <div className="header">
+        <div className="headers">
             <h1>Your Cart</h1>
             <button
                 className="home-button"
