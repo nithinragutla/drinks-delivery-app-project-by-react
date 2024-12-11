@@ -1,4 +1,4 @@
-/* General Styles */
+
 .cocktails-container {
     font-family: 'Arial, sans-serif';
     padding: 20px;
@@ -12,8 +12,7 @@
 }
 
 /* Top Bar */
-.top-bar {
-    background-color: #2f2c2b00;
+.topbar {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -23,6 +22,7 @@
 
 .btn-back-home,
 .btn-cart {
+    
     background-color: #3498db;
     color: #fff;
     border: none;
@@ -38,8 +38,8 @@
 }
 
 /* Header */
-.header {
-    justify-content: center;
+.head {
+    text-align: center;
     color: black;
 }
 
@@ -126,7 +126,7 @@
         align-items: center;
     }
 
-    .top-bar {
+    .topbar {
         padding-top: 80px;
         padding-right: 70px;
         gap: 5px;
@@ -138,7 +138,7 @@
         font-size: 20px;
     }
 
-    .header {
+    .head {
         text-align: center;
         font-size: 50px;
         margin-top: -80px;
@@ -158,7 +158,7 @@
 
     .btn-add-to-cart,
     .btn-buy-now {
-        font-size: 12px;
-        padding: 6px 10px;
+        font-size: 15px;
+        padding: 10px 10px;
     }
 }

@@ -48,7 +48,7 @@ const Cocktails = ({ addToCart, setView }) => {
 
   return (
     <div className="cocktails-container">
-      <div className="top-bar">
+      <div className="topbar">
         <button onClick={() => navigate('/HomePage')} className="btn-back-home">
           Back to Home
         </button>
@@ -57,7 +57,7 @@ const Cocktails = ({ addToCart, setView }) => {
         </button>
       </div>
 
-      <h1 className="header">Cocktails</h1>
+      <h1 className="head">Cocktails</h1>
       {loading ? (
         <p className="loading-text">Loading...</p>
       ) : (

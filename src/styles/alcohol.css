@@ -173,12 +173,11 @@
     }
 
     .alcohol-brand-card {
-        width: 100%;
         padding: 10px;
     }
 
     .alcohol-brand-image {
-        height: 250px;
+    object-fit: cover;
     }
 
     .alcohol-brand-name {
