@@ -50,7 +50,7 @@ function Cart() {
             <h1>Your Cart</h1>
             <button
                 className="home-button"
-                onClick={() => (window.location.href = "/HomePage")}
+                onClick={() => navigate("/HomePage")}
             >
                 Back to Home
             </button>
@@ -124,7 +124,7 @@ function Cart() {
                 <div className="pay-now-container">
                     <button
                         className="pay-now-button"
-                        onClick={() => navigate('/HomePage')}
+                        onClick={() => navigate('/PaymentPage')}
                     >
                         Pay Now
                     </button>
