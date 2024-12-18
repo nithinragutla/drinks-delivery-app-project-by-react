@@ -27,7 +27,7 @@ body, html {
   
   .payment-container h1 {
     text-align: center;
-    color: #333;
+    color: #0e0e0e;
     margin-bottom: 20px;
   }
   
@@ -39,7 +39,7 @@ body, html {
   .payment-form label {
     display: block;
     font-size: 14px;
-    color: #555;
+    color: #120c0c;
     margin-bottom: 5px;
   }
   
@@ -142,7 +142,7 @@ body, html {
     }
   
     .payment-form label {
-      font-size: 13px;
+      font-size: 15px;
     }
   
     .payment-form input[type="text"],

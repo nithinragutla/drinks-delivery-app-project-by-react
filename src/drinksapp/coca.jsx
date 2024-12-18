@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa'; // Importing Font Awesome Icon
+import { FaHome } from 'react-icons/fa';
 import '../styles/soft.css'; // Import the CSS file
 
 const Ccoa = () => {
@@ -49,9 +50,9 @@ const Ccoa = () => {
   return (
     <div className="ccoa-container">
       <div className="navigation">
-        <button className="home-button" onClick={() => navigate('/HomePage')}>
-          Back to Home
-        </button>
+      <button className="home-button" onClick={() => navigate('/HomePage')}>
+      <FaHome/> {/* Home icon with spacing */}
+    </button>
         <button className="cart-button" onClick={() => navigate('/Cart')}>
           <FaShoppingCart className="cart-icon" />
           Cart

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { FaHome } from 'react-icons/fa';
 import { FaShoppingCart } from 'react-icons/fa'; // Import the cart icon
 import '../styles/cocktails.css'; // Import the CSS file
 
@@ -49,9 +50,9 @@ const Cocktails = ({ addToCart, setView }) => {
   return (
     <div className="cocktails-container">
       <div className="topbar">
-        <button onClick={() => navigate('/HomePage')} className="btn-back-home">
-          Back to Home
-        </button>
+         <button className="btn-back-home" onClick={() => navigate('/HomePage')}>
+              <FaHome/> {/* Home icon with spacing */}
+            </button>
         <button onClick={() => navigate('/Cart')} className="btn-cart">
           <FaShoppingCart size={20} />
         </button>

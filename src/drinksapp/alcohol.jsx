@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/alcohol.css";
 import { useNavigate } from "react-router-dom";
 import { FaShoppingCart } from 'react-icons/fa';
+import { FaHome } from 'react-icons/fa';
 const AlcoholBrands = () => {
   const [cart, setCart] = useState([]);
   const navigate = useNavigate();
@@ -237,8 +238,8 @@ const AlcoholBrands = () => {
       <button
         className="back-to-home-button"
         onClick={() => navigate("/HomePage")}
-      >
-        Back to Home
+        >
+         <FaHome/> 
       </button>
       <button
         className="cart-icon-button"

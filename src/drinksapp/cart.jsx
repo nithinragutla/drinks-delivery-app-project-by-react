@@ -47,7 +47,7 @@ function Cart() {
         <div className="niiiii">
         <div className="cart-container">
         <div className="headers">
-            <h1>Your Cart</h1>
+            <h2>Your Cart</h2>
             <button
                 className="home-button"
                 onClick={() => navigate("/HomePage")}
@@ -65,7 +65,7 @@ function Cart() {
                                 <td>
                                     <img src={item.img} alt={item.name} />
                                 </td>
-                                <td>${item.price}</td>
+                                <td>₹{item.price}</td>
                                 <td>
                                     <button
                                         onClick={() =>
@@ -101,7 +101,7 @@ function Cart() {
                                 <td>
                                     <img src={item.img} alt={item.name} />
                                 </td>
-                                <td>${item.price}</td>
+                                <td>₹{item.price}</td>
                                 <td>
                                     <button
                                         onClick={() =>
@@ -119,16 +119,8 @@ function Cart() {
                     <p>Cocktails Total: ₹{cartTotal}</p>
                     <p>soft drink Total: ₹{cocaTotal}</p>
                     <p>Alcohol Total: ₹{alcoholTotal}</p>
-                    <h2>Overall Total: ₹{overallTotal}</h2>
+                    <h2>Total: ₹{overallTotal}</h2>
                 </div>
-                {/* <div className="pay-now-container">
-                    <button
-                        className=""
-                        onClick={() => navigate('/PaymentPage')}
-                    >
-                        Pay Now
-                    </button>
-                </div> */}
                 <button onClick={()=>navigate('/PaymentPage')} >Paynow</button>
             </>
         ) : (

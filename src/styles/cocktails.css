@@ -34,7 +34,7 @@
 .btn-cart {
     background-color: #f39c12;
     padding: 10px 15px;
-    border-radius: 50%;
+  
 }
 
 /* Header */
@@ -128,7 +128,7 @@
 
     .topbar {
         padding-top: 80px;
-        padding-right: 70px;
+        padding-right: 60px;
         gap: 5px;
     }
 
